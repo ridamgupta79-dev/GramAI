@@ -1,0 +1,348 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;} .sidebar-transition{transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);}</style><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-background":"#141b2b","on-secondary-container":"#007432","surface-container-low":"#f1f3ff","surface-container":"#e9edff","on-secondary-fixed":"#002109","on-primary":"#ffffff","on-tertiary-fixed":"#2a1700","tertiary-fixed-dim":"#ffb95f","on-surface":"#141b2b","on-error":"#ffffff","on-primary-container":"#eeefff","inverse-primary":"#b4c5ff","error-container":"#ffdad6","secondary-fixed":"#6bff8f","surface-container-highest":"#dce2f7","on-secondary-fixed-variant":"#005321","on-tertiary":"#ffffff","surface-tint":"#0053db","primary":"#004ac6","surface-bright":"#f9f9ff","on-surface-variant":"#434655","on-primary-fixed":"#00174b","inverse-surface":"#293040","secondary":"#006e2f","on-tertiary-container":"#ffeedd","surface":"#f9f9ff","on-error-container":"#93000a","secondary-container":"#6bff8f","surface-container-high":"#e1e8fd","surface-container-lowest":"#ffffff","on-primary-fixed-variant":"#003ea8","inverse-on-surface":"#edf0ff","error":"#ba1a1a","tertiary":"#784b00","primary-container":"#2563eb","outline":"#737686","outline-variant":"#c3c6d7","secondary-fixed-dim":"#4ae176","on-secondary":"#ffffff","tertiary-fixed":"#ffddb8","primary-fixed":"#dbe1ff","background":"#f9f9ff","surface-dim":"#d3daef","on-tertiary-fixed-variant":"#653e00","tertiary-container":"#996100","primary-fixed-dim":"#b4c5ff","surface-variant":"#dce2f7"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"xs":"4px","sm":"8px","margin":"32px","xl":"32px","unit":"8px","gutter":"24px","lg":"24px","2xl":"48px","md":"16px"},"fontFamily":{"title-md":["Inter"],"label-sm":["Inter"],"headline-lg":["Inter"],"headline-lg-mobile":["Inter"],"body-md":["Inter"],"mono-label":["Inter"],"display-lg":["Inter"]},"fontSize":{"title-md":["20px",{"lineHeight":"28px","fontWeight":"600"}],"label-sm":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","fontWeight":"600"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"mono-label":["12px",{"lineHeight":"16px","letterSpacing":"0.05em","fontWeight":"600"}],"display-lg":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"700"}]}}}}</script></head><body class="bg-background font-body-md text-on-background"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low/40 backdrop-blur-xl z-50 flex flex-col border-r border-outline-variant/30 sidebar-transition"><div class="h-16 flex items-center px-lg border-b border-outline-variant/20 mb-md"><img alt="GramAI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDO_d1HjxH-xuPeJa-tfx6HgkyBxuN45RmfjpdLU4sGosU42xIGJp8kLTjREtCJaPWlOKPRgqrcaHWkvgzP_8DIV5y1QlgI6mf8PjcMEQnFXu3eZRe_KVS2GQj4vm5f13o32DCc5vs4bnuUyetthxLpsMYyl4RqpFw4rQyOIQ35Qik4DJ_oP5sLxx-k1FQk-0OShwqpzVSMCtGIDaKWbidr90Dm4HtX8O8YI2jIq6ZRasDk_GFTof97"/><span class="ml-sm font-headline-lg-mobile text-primary tracking-tight">GramAI</span></div><nav class="flex-1 px-sm space-y-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold"><a class="flex items-center px-md py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-all group" data-path="home" href="#"><span class="material-symbols-outlined mr-md">grid_view</span><span class="font-label-sm">Home</span></a><a class="flex items-center px-md py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-all" data-path="new-analysis" href="#"><span class="material-symbols-outlined mr-md">add_chart</span><span class="font-label-sm">New Analysis</span></a><a class="flex items-center px-md py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-all" data-path="market-map" href="#"><span class="material-symbols-outlined mr-md">map</span><span class="font-label-sm">Market Map</span></a><a class="flex items-center px-md py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-all" data-path="financials" href="#"><span class="material-symbols-outlined mr-md">payments</span><span class="font-label-sm">Financials</span></a><a class="flex items-center px-md py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-all" data-path="ai-advisor" href="#"><span class="material-symbols-outlined mr-md">psychology</span><span class="font-label-sm">AI Advisor</span></a><a class="flex items-center px-md py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-all" data-path="schemes" href="#"><span class="material-symbols-outlined mr-md">policy</span><span class="font-label-sm">Schemes</span></a><a class="flex items-center px-md py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-all" data-path="reports" href="#"><span class="material-symbols-outlined mr-md">description</span><span class="font-label-sm">Reports</span></a></nav><div class="px-sm py-md border-t border-outline-variant/20"><a class="flex items-center px-md py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-all mb-xs" data-path="profile" href="#"><span class="material-symbols-outlined mr-md">account_circle</span><span class="font-label-sm">Profile</span></a><a class="flex items-center px-md py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-all" data-path="admin" href="#"><span class="material-symbols-outlined mr-md">settings_suggest</span><span class="font-label-sm">Admin</span></a></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/70 backdrop-blur-md z-40 border-b border-outline-variant/10 flex items-center px-lg justify-between shadow-[0_1px_8px_rgba(0,0,0,0.02)]"><div class="flex-1 max-w-xl"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-outline">search</span><input class="w-full bg-surface-container-lowest border border-outline-variant rounded-full py-2 pl-10 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="Search analysis, maps or reports..." type="text"/></div></div><div class="flex items-center gap-md ml-lg"><button class="relative p-sm text-on-surface-variant hover:bg-surface-container-high rounded-full transition-colors"><span class="material-symbols-outlined">notifications</span><span class="absolute top-1 right-1 w-2 h-2 bg-error rounded-full"></span></button><div class="h-8 w-px bg-outline-variant/30"></div><div class="flex items-center gap-sm pl-sm"><div class="text-right hidden sm:block"><p class="text-label-sm font-bold leading-tight">Advisor</p><p class="text-[10px] text-on-secondary-container bg-secondary-container px-xs rounded uppercase tracking-wider">Online</p></div><img alt="Profile" class="w-9 h-9 rounded-full object-cover ring-2 ring-surface-container-highest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAenDGac4_Y5PsDFq505QCKtEEiuTGpFG8NBTk_tkUXvtXLmd1wEGOKuhdeX6lIuNDeoUj6dcKNW0h1uR-ZW6miVPcOxeLw1WmkmwaSLfrCTEDtRxYpxia_iKrXMr7ethIEm9asBInmFio14q5WuIPTGsZutx1ffqsOLJG0Y-rozOkzY2GIL3oHKO8P1-AvQovSRvMhxtv70AB6JyD8lqU8yhOJvBrNt3lCY5EC-f87eKoWKgRTmCI0"/></div></div></header><main class="relative pt-16 min-h-screen bg-background"><div class="flex flex-col w-full min-h-screen">
+<!-- Profile Header Section -->
+<section class="relative pt-xl pb-margin px-lg lg:px-2xl bg-surface-container overflow-hidden">
+<div class="absolute inset-0 pointer-events-none">
+<svg class="absolute top-0 right-0 w-1/2 h-full text-primary opacity-5" preserveaspectratio="none" viewbox="0 0 100 100">
+<path d="M0,0 L100,0 L100,100 L50,100 Z" fill="currentColor"></path>
+</svg>
+<div class="absolute -top-24 -right-24 w-96 h-96 bg-primary-container rounded-full blur-3xl opacity-30 mix-blend-multiply"></div>
+<div class="absolute -bottom-24 left-12 w-72 h-72 bg-secondary-container rounded-full blur-3xl opacity-30 mix-blend-multiply"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row items-start md:items-center gap-margin">
+<div class="relative group">
+<div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden shadow-xl ring-4 ring-surface bg-surface-container-high transition-transform duration-300 group-hover:scale-105">
+<img alt="User Avatar" class="w-full h-full object-cover" data-alt="A professional headshot of a rural business owner, perhaps a modern farmer or local artisan, outdoors with natural lighting, smiling confidently. Warm tones, high quality photography, soft bokeh background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZIToeSaRI8ke4u1puwtWWYJdeN4XdvIias3W0n-LmarVPvVp5rNTUr8mlm4VESeQsFyVjlDwWbAZTEut2TynXMiwkKjWXYjvCyvWCutuMeXfh-JhTA_VFEs9d00QUByRQdWpoLaOifQGy2yhfZAisRDZcKLH6X2JpyM6JVokpibJuKUyVdaC5xRMhKOZqX3rpXT7EvzwI3ZnYpEFxhOchxWHTWEYOXY4Uhu8fZknPGtibDt5jy_LP"/>
+</div>
+<button class="absolute bottom-2 right-2 bg-primary text-on-primary p-2 rounded-full shadow-md hover:scale-110 transition-transform" title="Edit Profile Picture">
+<span class="material-symbols-outlined text-sm">edit</span>
+</button>
+</div>
+<div class="flex-1">
+<div class="flex flex-col gap-xs">
+<div class="flex items-center gap-sm">
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight">Ramesh Kumar</h1>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<p class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface-variant font-medium">Sunrise Agrotech Solutions</p>
+<div class="flex flex-wrap items-center gap-md mt-sm">
+<div class="flex items-center gap-xs text-on-surface-variant bg-surface px-3 py-1.5 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-sm">location_on</span>
+<span class="font-label-sm text-label-sm">Pune District, Maharashtra</span>
+</div>
+<div class="flex items-center gap-xs text-on-surface-variant bg-surface px-3 py-1.5 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-sm">business_center</span>
+<span class="font-label-sm text-label-sm">Agri-Processing</span>
+</div>
+<div class="flex items-center gap-xs text-on-surface-variant bg-surface px-3 py-1.5 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-sm">calendar_month</span>
+<span class="font-label-sm text-label-sm">Member since 2021</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-sm w-full md:w-auto">
+<button class="flex items-center justify-center gap-sm bg-primary text-on-primary px-lg py-sm rounded-lg font-label-sm text-label-sm shadow-md hover:bg-primary-fixed-variant transition-colors group">
+<span class="material-symbols-outlined group-hover:-translate-y-0.5 transition-transform">edit_document</span>
+                        Edit Business Profile
+                    </button>
+<button class="flex items-center justify-center gap-sm bg-surface-container-high text-on-surface px-lg py-sm rounded-lg font-label-sm text-label-sm shadow-sm hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-outline">share</span>
+                        Share Profile
+                    </button>
+</div>
+</div>
+<!-- Quick Stats -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-md mt-margin">
+<div class="bg-surface p-md rounded-xl shadow-sm flex flex-col gap-xs hover:-translate-y-1 transition-transform">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Reports Generated</span>
+<div class="flex items-end gap-sm">
+<span class="font-headline-lg text-headline-lg text-primary">24</span>
+<span class="font-mono-label text-mono-label text-secondary flex items-center mb-1"><span class="material-symbols-outlined text-[14px]">trending_up</span>+3 this month</span>
+</div>
+</div>
+<div class="bg-surface p-md rounded-xl shadow-sm flex flex-col gap-xs hover:-translate-y-1 transition-transform">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Active Plans</span>
+<div class="flex items-end gap-sm">
+<span class="font-headline-lg text-headline-lg text-primary">3</span>
+<span class="font-mono-label text-mono-label text-outline flex items-center mb-1">Ongoing</span>
+</div>
+</div>
+<div class="bg-surface p-md rounded-xl shadow-sm flex flex-col gap-xs hover:-translate-y-1 transition-transform">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Schemes Applied</span>
+<div class="flex items-end gap-sm">
+<span class="font-headline-lg text-headline-lg text-primary">5</span>
+<span class="font-mono-label text-mono-label text-secondary flex items-center mb-1">2 Approved</span>
+</div>
+</div>
+<div class="bg-surface p-md rounded-xl shadow-sm flex flex-col gap-xs hover:-translate-y-1 transition-transform">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Profile Completeness</span>
+<div class="flex items-end gap-sm w-full">
+<span class="font-headline-lg text-headline-lg text-primary">90%</span>
+<div class="flex-1 h-2 bg-surface-container-high rounded-full ml-sm mb-2 overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 90%;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Content Layout -->
+<div class="max-w-7xl mx-auto w-full px-lg lg:px-2xl py-margin grid grid-cols-1 lg:grid-cols-12 gap-margin">
+<!-- Left Column: Content Grids (8 cols) -->
+<div class="lg:col-span-8 flex flex-col gap-margin">
+<!-- Saved Business Plans -->
+<section>
+<div class="flex items-center justify-between mb-md">
+<h2 class="font-title-md text-title-md text-on-surface flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary">description</span>
+                        Saved Business Plans
+                    </h2>
+<a class="font-label-sm text-label-sm text-primary hover:underline flex items-center" href="#">View All <span class="material-symbols-outlined text-sm">chevron_right</span></a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<!-- Plan Card 1 -->
+<div class="group bg-surface-container-lowest rounded-2xl p-md shadow-sm hover:shadow-md transition-all relative overflow-hidden">
+<div class="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-primary-container to-transparent opacity-50 rounded-bl-3xl"></div>
+<div class="flex justify-between items-start mb-sm relative z-10">
+<div class="bg-primary-container text-on-primary-container px-2 py-1 rounded font-mono-label text-mono-label uppercase">Expansion</div>
+<button class="text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined">more_vert</span></button>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mb-xs group-hover:text-primary transition-colors line-clamp-1">Solar Dehydration Unit</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md line-clamp-2">Detailed financial model and market feasibility for setting up a 500kg/day solar dehydration facility for local produce.</p>
+<div class="flex items-center justify-between mt-auto pt-sm border-t border-surface-container-high relative z-10">
+<div class="flex items-center gap-xs text-outline">
+<span class="material-symbols-outlined text-[16px]">update</span>
+<span class="font-label-sm text-label-sm">Updated 2d ago</span>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Plan Card 2 -->
+<div class="group bg-surface-container-lowest rounded-2xl p-md shadow-sm hover:shadow-md transition-all relative overflow-hidden">
+<div class="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-secondary-container to-transparent opacity-50 rounded-bl-3xl"></div>
+<div class="flex justify-between items-start mb-sm relative z-10">
+<div class="bg-secondary-container text-on-secondary-container px-2 py-1 rounded font-mono-label text-mono-label uppercase">New Venture</div>
+<button class="text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined">more_vert</span></button>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mb-xs group-hover:text-primary transition-colors line-clamp-1">Organic Fertilizer Plant</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md line-clamp-2">Initial cost projections and supply chain mapping for vermicompost production targeting nearby organic farms.</p>
+<div class="flex items-center justify-between mt-auto pt-sm border-t border-surface-container-high relative z-10">
+<div class="flex items-center gap-xs text-outline">
+<span class="material-symbols-outlined text-[16px]">update</span>
+<span class="font-label-sm text-label-sm">Updated 1w ago</span>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Previous Reports -->
+<section>
+<div class="flex items-center justify-between mb-md">
+<h2 class="font-title-md text-title-md text-on-surface flex items-center gap-sm">
+<span class="material-symbols-outlined text-secondary">analytics</span>
+                        Previous Reports
+                    </h2>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden">
+<!-- Table Header -->
+<div class="grid grid-cols-12 gap-sm p-md bg-surface-container-low font-mono-label text-mono-label text-on-surface-variant uppercase tracking-wider">
+<div class="col-span-6 md:col-span-5">Report Name</div>
+<div class="col-span-3 hidden md:block">Type</div>
+<div class="col-span-4 md:col-span-3">Date</div>
+<div class="col-span-2 md:col-span-1 text-right">Action</div>
+</div>
+<!-- Table Rows -->
+<div class="flex flex-col">
+<!-- Row 1 -->
+<div class="grid grid-cols-12 gap-sm p-md items-center hover:bg-surface-container transition-colors group cursor-pointer border-b border-surface-container-high last:border-0">
+<div class="col-span-6 md:col-span-5 flex items-center gap-sm">
+<div class="w-10 h-10 rounded bg-primary-container text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">map</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-sm text-label-sm text-on-surface truncate group-hover:text-primary transition-colors">Market Demand Mapping - Q3</p>
+</div>
+</div>
+<div class="col-span-3 hidden md:flex items-center">
+<span class="inline-flex items-center px-2 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-mono-label text-[10px]">Market Analysis</span>
+</div>
+<div class="col-span-4 md:col-span-3 font-body-md text-body-md text-on-surface-variant">Oct 12, 2023</div>
+<div class="col-span-2 md:col-span-1 flex justify-end gap-sm">
+<button class="text-on-surface-variant hover:text-primary transition-colors" title="Download PDF"><span class="material-symbols-outlined">download</span></button>
+</div>
+</div>
+<!-- Row 2 -->
+<div class="grid grid-cols-12 gap-sm p-md items-center hover:bg-surface-container transition-colors group cursor-pointer border-b border-surface-container-high last:border-0">
+<div class="col-span-6 md:col-span-5 flex items-center gap-sm">
+<div class="w-10 h-10 rounded bg-secondary-container text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">payments</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-sm text-label-sm text-on-surface truncate group-hover:text-primary transition-colors">Financial Projections FY24</p>
+</div>
+</div>
+<div class="col-span-3 hidden md:flex items-center">
+<span class="inline-flex items-center px-2 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-mono-label text-[10px]">Financials</span>
+</div>
+<div class="col-span-4 md:col-span-3 font-body-md text-body-md text-on-surface-variant">Sep 28, 2023</div>
+<div class="col-span-2 md:col-span-1 flex justify-end gap-sm">
+<button class="text-on-surface-variant hover:text-primary transition-colors" title="Download PDF"><span class="material-symbols-outlined">download</span></button>
+</div>
+</div>
+<!-- Row 3 -->
+<div class="grid grid-cols-12 gap-sm p-md items-center hover:bg-surface-container transition-colors group cursor-pointer border-b border-surface-container-high last:border-0">
+<div class="col-span-6 md:col-span-5 flex items-center gap-sm">
+<div class="w-10 h-10 rounded bg-tertiary-container text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">policy</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-sm text-label-sm text-on-surface truncate group-hover:text-primary transition-colors">Scheme Eligibility Check: PMFME</p>
+</div>
+</div>
+<div class="col-span-3 hidden md:flex items-center">
+<span class="inline-flex items-center px-2 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-mono-label text-[10px]">Schemes</span>
+</div>
+<div class="col-span-4 md:col-span-3 font-body-md text-body-md text-on-surface-variant">Aug 15, 2023</div>
+<div class="col-span-2 md:col-span-1 flex justify-end gap-sm">
+<button class="text-on-surface-variant hover:text-primary transition-colors" title="Download PDF"><span class="material-symbols-outlined">download</span></button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column: Settings & History (4 cols) -->
+<div class="lg:col-span-4 flex flex-col gap-margin">
+<!-- Settings Card -->
+<section class="bg-surface-container-lowest rounded-2xl shadow-sm p-lg">
+<h2 class="font-title-md text-title-md text-on-surface mb-lg flex items-center gap-sm">
+<span class="material-symbols-outlined text-on-surface-variant">settings</span>
+                    App Settings
+                </h2>
+<div class="flex flex-col gap-lg">
+<!-- Language Setting -->
+<div class="flex items-center justify-between group">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface">Language</span>
+<span class="font-body-md text-body-md text-on-surface-variant text-sm">Select primary language</span>
+</div>
+<div class="relative">
+<select class="appearance-none bg-surface-container hover:bg-surface-container-high transition-colors text-on-surface font-label-sm text-label-sm py-2 pl-4 pr-10 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 cursor-pointer">
+<option selected="" value="en">English</option>
+<option value="hi">हिंदी (Hindi)</option>
+<option value="mr">मराठी (Marathi)</option>
+<option value="gu">ગુજરાતી (Gujarati)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Theme Setting -->
+<div class="flex items-center justify-between group">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface">Theme</span>
+<span class="font-body-md text-body-md text-on-surface-variant text-sm">System preference</span>
+</div>
+<div class="flex bg-surface-container rounded-lg p-1">
+<button class="px-3 py-1 rounded-md bg-surface shadow-sm text-primary flex items-center justify-center transition-all" title="Light Mode">
+<span class="material-symbols-outlined text-[20px]">light_mode</span>
+</button>
+<button class="px-3 py-1 rounded-md text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-all" title="Dark Mode">
+<span class="material-symbols-outlined text-[20px]">dark_mode</span>
+</button>
+</div>
+</div>
+<!-- Notifications Setting -->
+<div class="flex items-center justify-between group">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface">Notifications</span>
+<span class="font-body-md text-body-md text-on-surface-variant text-sm">Email & in-app alerts</span>
+</div>
+<button aria-checked="true" class="w-12 h-6 bg-primary rounded-full relative transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2 focus:ring-offset-surface-container-lowest" id="notif-toggle" role="switch">
+<span class="absolute left-1 top-1 w-4 h-4 bg-on-primary rounded-full transition-transform duration-300 translate-x-6 shadow-sm"></span>
+</button>
+</div>
+</div>
+<div class="mt-lg pt-lg border-t border-surface-container-high">
+<button class="w-full flex items-center justify-center gap-sm py-2 text-error hover:bg-error-container/50 rounded-lg transition-colors font-label-sm text-label-sm">
+<span class="material-symbols-outlined">logout</span>
+                        Sign Out
+                    </button>
+</div>
+</section>
+<!-- Business History Timeline -->
+<section class="bg-surface-container-lowest rounded-2xl shadow-sm p-lg">
+<h2 class="font-title-md text-title-md text-on-surface mb-lg flex items-center gap-sm">
+<span class="material-symbols-outlined text-tertiary">history</span>
+                    Business History
+                </h2>
+<div class="relative pl-sm">
+<!-- Vertical Line -->
+<div class="absolute left-[11px] top-2 bottom-2 w-[2px] bg-surface-container-high"></div>
+<!-- Timeline Item 1 -->
+<div class="relative mb-lg pl-xl">
+<div class="absolute left-0 top-1 w-6 h-6 rounded-full bg-primary-container border-4 border-surface-container-lowest flex items-center justify-center z-10 shadow-sm">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface">Profile Verified</p>
+<p class="font-mono-label text-mono-label text-outline mt-xs">Dec 2023</p>
+</div>
+<!-- Timeline Item 2 -->
+<div class="relative mb-lg pl-xl">
+<div class="absolute left-0 top-1 w-6 h-6 rounded-full bg-surface-container border-4 border-surface-container-lowest flex items-center justify-center z-10">
+<div class="w-2 h-2 rounded-full bg-outline"></div>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface">First Market Report Generated</p>
+<p class="font-mono-label text-mono-label text-outline mt-xs">Nov 2023</p>
+</div>
+<!-- Timeline Item 3 -->
+<div class="relative mb-lg pl-xl">
+<div class="absolute left-0 top-1 w-6 h-6 rounded-full bg-surface-container border-4 border-surface-container-lowest flex items-center justify-center z-10">
+<div class="w-2 h-2 rounded-full bg-outline"></div>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface">Business Account Created</p>
+<p class="font-mono-label text-mono-label text-outline mt-xs">Oct 2023</p>
+</div>
+<!-- Timeline Item 4 -->
+<div class="relative pl-xl">
+<div class="absolute left-0 top-1 w-6 h-6 rounded-full bg-surface-container border-4 border-surface-container-lowest flex items-center justify-center z-10">
+<span class="material-symbols-outlined text-[12px] text-outline">flag</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface">Joined GramAI</p>
+<p class="font-mono-label text-mono-label text-outline mt-xs">Oct 2023</p>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<script>
+    // Simple toggle logic for demonstration
+    const toggle = document.getElementById('notif-toggle');
+    let isChecked = true;
+    
+    toggle.addEventListener('click', () => {
+        isChecked = !isChecked;
+        toggle.setAttribute('aria-checked', isChecked);
+        const knob = toggle.querySelector('span');
+        
+        if (isChecked) {
+            toggle.classList.remove('bg-surface-container-highest');
+            toggle.classList.add('bg-primary');
+            knob.classList.remove('translate-x-1');
+            knob.classList.add('translate-x-6');
+        } else {
+            toggle.classList.remove('bg-primary');
+            toggle.classList.add('bg-surface-container-highest');
+            knob.classList.remove('translate-x-6');
+            knob.classList.add('translate-x-1');
+        }
+    });
+</script></main></div><div class="fixed bottom-8 right-8 z-50"><button class="w-14 h-14 rounded-full bg-primary text-on-primary shadow-xl flex items-center justify-center hover:scale-110 transition-transform active:scale-95"><span class="material-symbols-outlined text-3xl">smart_toy</span></button></div></body></html>

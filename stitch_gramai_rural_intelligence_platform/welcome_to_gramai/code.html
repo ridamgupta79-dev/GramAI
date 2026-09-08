@@ -1,0 +1,132 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-background":"#141b2b","on-secondary-container":"#007432","surface-container-low":"#f1f3ff","surface-container":"#e9edff","on-secondary-fixed":"#002109","on-primary":"#ffffff","on-tertiary-fixed":"#2a1700","tertiary-fixed-dim":"#ffb95f","on-surface":"#141b2b","on-error":"#ffffff","on-primary-container":"#eeefff","inverse-primary":"#b4c5ff","error-container":"#ffdad6","secondary-fixed":"#6bff8f","surface-container-highest":"#dce2f7","on-secondary-fixed-variant":"#005321","on-tertiary":"#ffffff","surface-tint":"#0053db","primary":"#004ac6","surface-bright":"#f9f9ff","on-surface-variant":"#434655","on-primary-fixed":"#00174b","inverse-surface":"#293040","secondary":"#006e2f","on-tertiary-container":"#ffeedd","surface":"#f9f9ff","on-error-container":"#93000a","secondary-container":"#6bff8f","surface-container-high":"#e1e8fd","surface-container-lowest":"#ffffff","on-primary-fixed-variant":"#003ea8","inverse-on-surface":"#edf0ff","error":"#ba1a1a","tertiary":"#784b00","primary-container":"#2563eb","outline":"#737686","outline-variant":"#c3c6d7","secondary-fixed-dim":"#4ae176","on-secondary":"#ffffff","tertiary-fixed":"#ffddb8","primary-fixed":"#dbe1ff","background":"#f9f9ff","surface-dim":"#d3daef","on-tertiary-fixed-variant":"#653e00","tertiary-container":"#996100","primary-fixed-dim":"#b4c5ff","surface-variant":"#dce2f7"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"xs":"4px","sm":"8px","margin":"32px","xl":"32px","unit":"8px","gutter":"24px","lg":"24px","2xl":"48px","md":"16px"},"fontFamily":{"title-md":["Inter"],"label-sm":["Inter"],"headline-lg":["Inter"],"headline-lg-mobile":["Inter"],"body-md":["Inter"],"mono-label":["Inter"],"display-lg":["Inter"]},"fontSize":{"title-md":["20px",{"lineHeight":"28px","fontWeight":"600"}],"label-sm":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","fontWeight":"600"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"mono-label":["12px",{"lineHeight":"16px","letterSpacing":"0.05em","fontWeight":"600"}],"display-lg":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"700"}]}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-background font-body-md text-on-background"><main class="w-full flex items-center justify-center min-h-screen"><div class="flex flex-col w-full relative min-h-[calc(100vh-80px)] items-center justify-center overflow-hidden bg-background">
+<!-- Ambient Background Elements -->
+<div class="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden mix-blend-multiply opacity-40">
+<div class="absolute -top-[20%] -left-[10%] w-[60%] h-[60%] rounded-full bg-surface-tint blur-[120px] opacity-30 animate-[pulse_8s_ease-in-out_infinite]"></div>
+<div class="absolute top-[40%] -right-[20%] w-[50%] h-[50%] rounded-full bg-secondary-fixed blur-[100px] opacity-40 animate-[pulse_10s_ease-in-out_infinite_alternate]"></div>
+<div class="absolute -bottom-[10%] left-[20%] w-[40%] h-[40%] rounded-full bg-primary blur-[80px] opacity-20"></div>
+<!-- Abstract Leaf/Grain SVG Overlay -->
+<svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="100" id="grain" patternunits="userSpaceOnUse" width="100">
+<circle class="text-primary-fixed" cx="2" cy="2" fill="currentColor" r="1"></circle>
+<circle class="text-secondary-fixed" cx="50" cy="50" fill="currentColor" r="1.5"></circle>
+<path class="text-surface-tint" d="M20,80 Q30,60 50,80 T80,80" fill="none" stroke="currentColor" stroke-dasharray="2 4" stroke-width="0.5"></path>
+</pattern>
+</defs>
+<rect fill="url(#grain)" height="100%" width="100%"></rect>
+</svg>
+</div>
+<!-- Main Content Container -->
+<div class="relative z-10 flex flex-col items-center justify-center w-full max-w-4xl px-gutter text-center gap-xl">
+<!-- App Logo/Branding Element -->
+<div class="flex flex-col items-center gap-md">
+<div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-lg shadow-primary/20 backdrop-blur-md">
+<span class="material-symbols-outlined text-[32px] text-on-primary" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-on-background tracking-tight">Gram<span class="text-primary">AI</span></h1>
+</div>
+<!-- Tagline & Description -->
+<div class="flex flex-col gap-md max-w-2xl">
+<h2 class="font-headline-lg text-headline-lg text-on-background">Empowering Rural Entrepreneurs with AI Intelligence</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto">
+                Unlock actionable insights, optimize your agricultural business, and connect with global markets using advanced, localized artificial intelligence.
+            </p>
+</div>
+<!-- Call to Action Area -->
+<div class="flex flex-col sm:flex-row items-center gap-md mt-lg">
+<button class="group relative px-8 py-4 bg-primary text-on-primary rounded-full font-label-sm text-label-sm overflow-hidden transition-transform hover:scale-105 active:scale-95 shadow-md shadow-primary/30">
+<span class="relative z-10 flex items-center gap-sm">
+                    Start Your Journey
+                    <span class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+</span>
+<div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></div>
+</button>
+<!-- Language Selector -->
+<div class="relative" id="langDropdownWrapper">
+<button class="flex items-center gap-sm px-6 py-4 bg-surface-container text-on-surface rounded-full font-label-sm text-label-sm transition-colors hover:bg-surface-container-high focus:outline-none focus:ring-2 focus:ring-primary/50" id="langBtn">
+<span class="material-symbols-outlined text-[18px]">language</span>
+<span id="currentLang">English</span>
+<span class="material-symbols-outlined text-[18px] transition-transform" id="langIcon">expand_more</span>
+</button>
+<!-- Dropdown Menu -->
+<div class="absolute top-full left-0 mt-xs w-full min-w-[160px] bg-surface-container-lowest rounded-xl shadow-xl shadow-on-background/5 opacity-0 invisible translate-y-2 transition-all duration-200 z-50" id="langMenu">
+<div class="flex flex-col py-xs">
+<button class="lang-option w-full text-left px-md py-sm hover:bg-surface-container-low font-body-md text-body-md text-on-surface transition-colors" data-lang="English">English</button>
+<button class="lang-option w-full text-left px-md py-sm hover:bg-surface-container-low font-body-md text-body-md text-on-surface transition-colors" data-lang="हिंदी (Hindi)">हिंदी (Hindi)</button>
+<button class="lang-option w-full text-left px-md py-sm hover:bg-surface-container-low font-body-md text-body-md text-on-surface transition-colors" data-lang="मराठी (Marathi)">मराठी (Marathi)</button>
+<button class="lang-option w-full text-left px-md py-sm hover:bg-surface-container-low font-body-md text-body-md text-on-surface transition-colors" data-lang="தமிழ் (Tamil)">தமிழ் (Tamil)</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Decorative Bottom Elements -->
+<div class="absolute bottom-0 w-full flex justify-between items-end p-gutter pointer-events-none opacity-50">
+<div class="font-mono-label text-mono-label text-outline uppercase tracking-wider writing-vertical-rl">v2.4.0-beta</div>
+<div class="flex gap-xs">
+<div class="w-2 h-2 rounded-full bg-secondary-fixed animate-ping"></div>
+<div class="font-mono-label text-mono-label text-outline uppercase">System Online</div>
+</div>
+</div>
+<style>
+        @keyframes shimmer {
+            100% { transform: translateX(100%); }
+        }
+        .writing-vertical-rl {
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+        }
+    </style>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const langBtn = document.getElementById('langBtn');
+            const langMenu = document.getElementById('langMenu');
+            const langIcon = document.getElementById('langIcon');
+            const currentLang = document.getElementById('currentLang');
+            const langOptions = document.querySelectorAll('.lang-option');
+            const wrapper = document.getElementById('langDropdownWrapper');
+
+            let isOpen = false;
+
+            const toggleMenu = () => {
+                isOpen = !isOpen;
+                if (isOpen) {
+                    langMenu.classList.remove('opacity-0', 'invisible', 'translate-y-2');
+                    langMenu.classList.add('opacity-100', 'visible', 'translate-y-0');
+                    langIcon.style.transform = 'rotate(180deg)';
+                } else {
+                    langMenu.classList.add('opacity-0', 'invisible', 'translate-y-2');
+                    langMenu.classList.remove('opacity-100', 'visible', 'translate-y-0');
+                    langIcon.style.transform = 'rotate(0deg)';
+                }
+            };
+
+            langBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                toggleMenu();
+            });
+
+            langOptions.forEach(option => {
+                option.addEventListener('click', (e) => {
+                    currentLang.textContent = e.target.dataset.lang;
+                    toggleMenu();
+                    
+                    // Add subtle highlight effect to selection
+                    e.target.classList.add('bg-primary/10', 'text-primary');
+                    setTimeout(() => {
+                        e.target.classList.remove('bg-primary/10', 'text-primary');
+                    }, 200);
+                });
+            });
+
+            // Close when clicking outside
+            document.addEventListener('click', (e) => {
+                if (isOpen && !wrapper.contains(e.target)) {
+                    toggleMenu();
+                }
+            });
+        });
+    </script>
+</div></main></body></html>

@@ -1,0 +1,19 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Node
+node_modules/
+dist/
+
+# Environment / secrets
+.env
+.env.*
+
+# Local databases
+*.db
+
+# VS Code
+.vscode/

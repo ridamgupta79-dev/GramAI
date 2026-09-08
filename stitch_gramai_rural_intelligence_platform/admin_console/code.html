@@ -1,0 +1,374 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;} .sidebar-transition{transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);}</style><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-background":"#141b2b","on-secondary-container":"#007432","surface-container-low":"#f1f3ff","surface-container":"#e9edff","on-secondary-fixed":"#002109","on-primary":"#ffffff","on-tertiary-fixed":"#2a1700","tertiary-fixed-dim":"#ffb95f","on-surface":"#141b2b","on-error":"#ffffff","on-primary-container":"#eeefff","inverse-primary":"#b4c5ff","error-container":"#ffdad6","secondary-fixed":"#6bff8f","surface-container-highest":"#dce2f7","on-secondary-fixed-variant":"#005321","on-tertiary":"#ffffff","surface-tint":"#0053db","primary":"#004ac6","surface-bright":"#f9f9ff","on-surface-variant":"#434655","on-primary-fixed":"#00174b","inverse-surface":"#293040","secondary":"#006e2f","on-tertiary-container":"#ffeedd","surface":"#f9f9ff","on-error-container":"#93000a","secondary-container":"#6bff8f","surface-container-high":"#e1e8fd","surface-container-lowest":"#ffffff","on-primary-fixed-variant":"#003ea8","inverse-on-surface":"#edf0ff","error":"#ba1a1a","tertiary":"#784b00","primary-container":"#2563eb","outline":"#737686","outline-variant":"#c3c6d7","secondary-fixed-dim":"#4ae176","on-secondary":"#ffffff","tertiary-fixed":"#ffddb8","primary-fixed":"#dbe1ff","background":"#f9f9ff","surface-dim":"#d3daef","on-tertiary-fixed-variant":"#653e00","tertiary-container":"#996100","primary-fixed-dim":"#b4c5ff","surface-variant":"#dce2f7"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"xs":"4px","sm":"8px","margin":"32px","xl":"32px","unit":"8px","gutter":"24px","lg":"24px","2xl":"48px","md":"16px"},"fontFamily":{"title-md":["Inter"],"label-sm":["Inter"],"headline-lg":["Inter"],"headline-lg-mobile":["Inter"],"body-md":["Inter"],"mono-label":["Inter"],"display-lg":["Inter"]},"fontSize":{"title-md":["20px",{"lineHeight":"28px","fontWeight":"600"}],"label-sm":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","fontWeight":"600"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"mono-label":["12px",{"lineHeight":"16px","letterSpacing":"0.05em","fontWeight":"600"}],"display-lg":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"700"}]}}}}</script></head><body class="bg-background font-body-md text-on-background"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low/40 backdrop-blur-xl z-50 flex flex-col border-r border-outline-variant/30 sidebar-transition"><div class="h-16 flex items-center px-lg border-b border-outline-variant/20 mb-md"><img alt="GramAI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDO_d1HjxH-xuPeJa-tfx6HgkyBxuN45RmfjpdLU4sGosU42xIGJp8kLTjREtCJaPWlOKPRgqrcaHWkvgzP_8DIV5y1QlgI6mf8PjcMEQnFXu3eZRe_KVS2GQj4vm5f13o32DCc5vs4bnuUyetthxLpsMYyl4RqpFw4rQyOIQ35Qik4DJ_oP5sLxx-k1FQk-0OShwqpzVSMCtGIDaKWbidr90Dm4HtX8O8YI2jIq6ZRasDk_GFTof97"/><span class="ml-sm font-headline-lg-mobile text-primary tracking-tight">GramAI</span></div><nav class="flex-1 px-sm space-y-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold"><a class="flex items-center px-md py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-all group" data-path="home" href="#"><span class="material-symbols-outlined mr-md">grid_view</span><span class="font-label-sm">Home</span></a><a class="flex items-center px-md py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-all" data-path="new-analysis" href="#"><span class="material-symbols-outlined mr-md">add_chart</span><span class="font-label-sm">New Analysis</span></a><a class="flex items-center px-md py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-all" data-path="market-map" href="#"><span class="material-symbols-outlined mr-md">map</span><span class="font-label-sm">Market Map</span></a><a class="flex items-center px-md py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-all" data-path="financials" href="#"><span class="material-symbols-outlined mr-md">payments</span><span class="font-label-sm">Financials</span></a><a class="flex items-center px-md py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-all" data-path="ai-advisor" href="#"><span class="material-symbols-outlined mr-md">psychology</span><span class="font-label-sm">AI Advisor</span></a><a class="flex items-center px-md py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-all" data-path="schemes" href="#"><span class="material-symbols-outlined mr-md">policy</span><span class="font-label-sm">Schemes</span></a><a class="flex items-center px-md py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-all" data-path="reports" href="#"><span class="material-symbols-outlined mr-md">description</span><span class="font-label-sm">Reports</span></a></nav><div class="px-sm py-md border-t border-outline-variant/20"><a class="flex items-center px-md py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-all mb-xs" data-path="profile" href="#"><span class="material-symbols-outlined mr-md">account_circle</span><span class="font-label-sm">Profile</span></a><a class="flex items-center px-md py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-all" data-path="admin" href="#"><span class="material-symbols-outlined mr-md">settings_suggest</span><span class="font-label-sm">Admin</span></a></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/70 backdrop-blur-md z-40 border-b border-outline-variant/10 flex items-center px-lg justify-between shadow-[0_1px_8px_rgba(0,0,0,0.02)]"><div class="flex-1 max-w-xl"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-outline">search</span><input class="w-full bg-surface-container-lowest border border-outline-variant rounded-full py-2 pl-10 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="Search analysis, maps or reports..." type="text"/></div></div><div class="flex items-center gap-md ml-lg"><button class="relative p-sm text-on-surface-variant hover:bg-surface-container-high rounded-full transition-colors"><span class="material-symbols-outlined">notifications</span><span class="absolute top-1 right-1 w-2 h-2 bg-error rounded-full"></span></button><div class="h-8 w-px bg-outline-variant/30"></div><div class="flex items-center gap-sm pl-sm"><div class="text-right hidden sm:block"><p class="text-label-sm font-bold leading-tight">Advisor</p><p class="text-[10px] text-on-secondary-container bg-secondary-container px-xs rounded uppercase tracking-wider">Online</p></div><img alt="Profile" class="w-9 h-9 rounded-full object-cover ring-2 ring-surface-container-highest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAenDGac4_Y5PsDFq505QCKtEEiuTGpFG8NBTk_tkUXvtXLmd1wEGOKuhdeX6lIuNDeoUj6dcKNW0h1uR-ZW6miVPcOxeLw1WmkmwaSLfrCTEDtRxYpxia_iKrXMr7ethIEm9asBInmFio14q5WuIPTGsZutx1ffqsOLJG0Y-rozOkzY2GIL3oHKO8P1-AvQovSRvMhxtv70AB6JyD8lqU8yhOJvBrNt3lCY5EC-f87eKoWKgRTmCI0"/></div></div></header><main class="relative pt-16 min-h-screen bg-background"><div class="flex flex-col w-full relative">
+<div class="px-lg py-xl">
+<!-- Header & Top Actions -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-xl">
+<div>
+<h1 class="font-display-lg text-display-lg text-on-background mb-xs">Platform Command</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">Real-time oversight of GramAI's intelligence network. Monitor system health, user activity, and algorithmic deployment across all nodes.</p>
+</div>
+<div class="mt-md md:mt-0 flex gap-sm">
+<button class="bg-surface-container-high hover:bg-surface-container-highest text-on-surface transition-colors px-md py-sm rounded-lg flex items-center shadow-sm">
+<span class="material-symbols-outlined mr-sm text-[20px]">download</span>
+<span class="font-label-sm text-label-sm">Export Report</span>
+</button>
+<button class="bg-primary hover:bg-on-primary-fixed-variant text-on-primary transition-colors px-md py-sm rounded-lg flex items-center shadow-md">
+<span class="material-symbols-outlined mr-sm text-[20px]">sync</span>
+<span class="font-label-sm text-label-sm">Force Sync</span>
+</button>
+</div>
+</div>
+<!-- KPI Grid (Bento Style) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-md mb-2xl">
+<!-- KPI 1 -->
+<div class="bg-surface-container rounded-xl p-md shadow-sm relative overflow-hidden group">
+<div class="absolute -right-4 -top-4 w-24 h-24 bg-primary/5 rounded-full blur-xl group-hover:bg-primary/10 transition-colors"></div>
+<div class="flex justify-between items-start mb-lg">
+<div>
+<p class="font-mono-label text-mono-label text-on-surface-variant uppercase tracking-wider">Total Users</p>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-xs">12,482</h2>
+</div>
+<div class="bg-primary-container p-sm rounded-lg text-on-primary-container">
+<span class="material-symbols-outlined">group</span>
+</div>
+</div>
+<div class="flex items-center">
+<span class="material-symbols-outlined text-[16px] text-secondary mr-xs">trending_up</span>
+<span class="font-label-sm text-label-sm text-secondary mr-sm">+14%</span>
+<span class="font-body-md text-body-md text-on-surface-variant text-sm">vs last month</span>
+</div>
+<!-- Micro Sparkline -->
+<div class="mt-md h-8 w-full">
+<svg class="w-full h-full preserve-aspect-ratio-none" viewbox="0 0 100 20">
+<path class="text-primary" d="M0 20 L 10 15 L 20 18 L 30 10 L 40 12 L 50 5 L 60 8 L 70 2 L 80 5 L 90 0 L 100 4" fill="none" stroke="currentColor" stroke-width="2"></path>
+</svg>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="bg-surface-container rounded-xl p-md shadow-sm relative overflow-hidden group">
+<div class="absolute -right-4 -top-4 w-24 h-24 bg-secondary-container/20 rounded-full blur-xl group-hover:bg-secondary-container/30 transition-colors"></div>
+<div class="flex justify-between items-start mb-lg">
+<div>
+<p class="font-mono-label text-mono-label text-on-surface-variant uppercase tracking-wider">Active Analyses</p>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-xs">3,891</h2>
+</div>
+<div class="bg-secondary-container p-sm rounded-lg text-on-secondary-container">
+<span class="material-symbols-outlined">analytics</span>
+</div>
+</div>
+<div class="flex items-center">
+<span class="material-symbols-outlined text-[16px] text-secondary mr-xs">trending_up</span>
+<span class="font-label-sm text-label-sm text-secondary mr-sm">+8%</span>
+<span class="font-body-md text-body-md text-on-surface-variant text-sm">vs last week</span>
+</div>
+<!-- Micro Sparkline -->
+<div class="mt-md h-8 w-full">
+<svg class="w-full h-full preserve-aspect-ratio-none" viewbox="0 0 100 20">
+<path class="text-secondary" d="M0 15 L 15 10 L 30 12 L 45 5 L 60 8 L 75 2 L 90 5 L 100 0" fill="none" stroke="currentColor" stroke-width="2"></path>
+</svg>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="bg-surface-container rounded-xl p-md shadow-sm relative overflow-hidden group">
+<div class="absolute -right-4 -top-4 w-24 h-24 bg-tertiary-container/10 rounded-full blur-xl group-hover:bg-tertiary-container/20 transition-colors"></div>
+<div class="flex justify-between items-start mb-lg">
+<div>
+<p class="font-mono-label text-mono-label text-on-surface-variant uppercase tracking-wider">Loans Facilitated</p>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-xs">₹42.5Cr</h2>
+</div>
+<div class="bg-tertiary-container p-sm rounded-lg text-on-tertiary-container">
+<span class="material-symbols-outlined">account_balance</span>
+</div>
+</div>
+<div class="flex items-center">
+<span class="material-symbols-outlined text-[16px] text-secondary mr-xs">trending_up</span>
+<span class="font-label-sm text-label-sm text-secondary mr-sm">+22%</span>
+<span class="font-body-md text-body-md text-on-surface-variant text-sm">YTD</span>
+</div>
+<!-- Micro Sparkline -->
+<div class="mt-md h-8 w-full">
+<svg class="w-full h-full preserve-aspect-ratio-none" viewbox="0 0 100 20">
+<path class="text-tertiary" d="M0 20 L 20 18 L 40 10 L 60 12 L 80 2 L 100 5" fill="none" stroke="currentColor" stroke-width="2"></path>
+</svg>
+</div>
+</div>
+<!-- KPI 4 System Health -->
+<div class="bg-surface-container-highest rounded-xl p-md shadow-md relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-transparent via-primary/5 to-transparent"></div>
+<div class="relative z-10 flex flex-col h-full justify-between">
+<div class="flex justify-between items-start">
+<div>
+<p class="font-mono-label text-mono-label text-on-surface-variant uppercase tracking-wider">System Health</p>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-xs flex items-center">
+                                99.98%
+                                <span class="relative flex h-3 w-3 ml-sm">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-secondary"></span>
+</span>
+</h2>
+</div>
+<div class="bg-surface p-sm rounded-lg text-primary shadow-sm">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">dns</span>
+</div>
+</div>
+<div class="mt-md space-y-2">
+<div class="flex justify-between text-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">API Latency</span>
+<span class="font-mono-label text-mono-label text-on-surface">42ms</span>
+</div>
+<div class="w-full bg-surface rounded-full h-1.5">
+<div class="bg-secondary h-1.5 rounded-full" style="width: 15%"></div>
+</div>
+<div class="flex justify-between text-sm pt-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Worker Nodes</span>
+<span class="font-mono-label text-mono-label text-on-surface">12/12</span>
+</div>
+<div class="w-full bg-surface rounded-full h-1.5">
+<div class="bg-secondary h-1.5 rounded-full" style="width: 100%"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Content Split -->
+<div class="grid grid-cols-1 xl:grid-cols-3 gap-lg mb-2xl">
+<!-- Left Column: Users & Analytics (Spans 2) -->
+<div class="xl:col-span-2 space-y-lg">
+<!-- Regional Trends Chart Placeholder -->
+<div class="bg-surface-container rounded-xl p-lg shadow-sm">
+<div class="flex justify-between items-center mb-md">
+<h3 class="font-title-md text-title-md text-on-surface">Regional Business Formation</h3>
+<div class="flex gap-sm">
+<span class="px-sm py-xs bg-surface text-on-surface-variant rounded font-label-sm text-label-sm cursor-pointer shadow-sm">Agri</span>
+<span class="px-sm py-xs bg-primary text-on-primary rounded font-label-sm text-label-sm cursor-pointer shadow-sm">Retail</span>
+<span class="px-sm py-xs bg-surface text-on-surface-variant rounded font-label-sm text-label-sm cursor-pointer shadow-sm">Mfg</span>
+</div>
+</div>
+<div class="relative w-full h-64 bg-surface rounded-lg overflow-hidden flex items-end justify-between px-md pt-xl pb-md">
+<!-- Pseudo Bar Chart -->
+<div class="w-12 bg-primary/20 hover:bg-primary/40 transition-colors h-[40%] rounded-t-sm relative group"><div class="absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-inverse-surface text-inverse-on-surface font-mono-label text-[10px] px-2 py-1 rounded">40%</div></div>
+<div class="w-12 bg-primary/30 hover:bg-primary/50 transition-colors h-[60%] rounded-t-sm relative group"><div class="absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-inverse-surface text-inverse-on-surface font-mono-label text-[10px] px-2 py-1 rounded">60%</div></div>
+<div class="w-12 bg-primary/50 hover:bg-primary/70 transition-colors h-[30%] rounded-t-sm relative group"><div class="absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-inverse-surface text-inverse-on-surface font-mono-label text-[10px] px-2 py-1 rounded">30%</div></div>
+<div class="w-12 bg-primary hover:bg-primary/90 transition-colors h-[85%] rounded-t-sm relative group shadow-[0_0_15px_rgba(0,74,198,0.3)]"><div class="absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-inverse-surface text-inverse-on-surface font-mono-label text-[10px] px-2 py-1 rounded">85%</div></div>
+<div class="w-12 bg-primary/40 hover:bg-primary/60 transition-colors h-[50%] rounded-t-sm relative group"><div class="absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-inverse-surface text-inverse-on-surface font-mono-label text-[10px] px-2 py-1 rounded">50%</div></div>
+<div class="w-12 bg-primary/70 hover:bg-primary/80 transition-colors h-[75%] rounded-t-sm relative group"><div class="absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-inverse-surface text-inverse-on-surface font-mono-label text-[10px] px-2 py-1 rounded">75%</div></div>
+<div class="w-12 bg-primary/20 hover:bg-primary/40 transition-colors h-[45%] rounded-t-sm relative group"><div class="absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-inverse-surface text-inverse-on-surface font-mono-label text-[10px] px-2 py-1 rounded">45%</div></div>
+<!-- Decorative Map Background overlay -->
+<div class="absolute inset-0 opacity-10 mix-blend-overlay pointer-events-none" data-alt="A stylized, low-contrast topographical map showing regional boundaries, used as a subtle texture behind a data chart. Colors are muted blues and grays, modern UI aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCshRb8eqboZaqWZ19-9Y-RaJx5FTBV5_5TFDRBI7HFK2H3MnJ35OCpsTdUbuphTK1zimQzkf-FeMuptQiTNLY2AtW-s_lrVTlRyBm1f_X7bQEDv6eu6UlyuvczrRgayHgwzLZ_JuQTFYAqIm24tDldUEelO9K7tyaC94gOezyW30dfFayJQyMG5Ph7Nbq-iiKjNbemJbPdCLKmpUXXyC6dnNs_iCDqhfE2rVtundIzBaxnFNUONyHT'); background-size: cover; background-position: center;"></div>
+</div>
+</div>
+<!-- Users Table -->
+<div class="bg-surface-container rounded-xl p-lg shadow-sm">
+<div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-md gap-sm">
+<h3 class="font-title-md text-title-md text-on-surface">User Oversight</h3>
+<div class="flex gap-sm w-full sm:w-auto">
+<div class="relative flex-1 sm:w-64">
+<span class="material-symbols-outlined absolute left-3 top-2 text-outline-variant text-[20px]">search</span>
+<input class="w-full bg-surface border border-outline-variant/50 rounded-lg py-1.5 pl-9 pr-3 text-sm font-body-md focus:outline-none focus:ring-2 focus:ring-primary/30 transition-shadow" placeholder="Search by name, ID, region..." type="text"/>
+</div>
+<button class="bg-surface border border-outline-variant/50 p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-[20px]">filter_list</span>
+</button>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low font-mono-label text-mono-label text-on-surface-variant">
+<th class="p-3 font-semibold rounded-tl-lg">User</th>
+<th class="p-3 font-semibold">Region</th>
+<th class="p-3 font-semibold">Status</th>
+<th class="p-3 font-semibold">Last Active</th>
+<th class="p-3 font-semibold rounded-tr-lg text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md">
+<tr class="hover:bg-surface-container-highest/50 transition-colors group">
+<td class="p-3 py-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-bold text-sm">RK</div>
+<div>
+<div class="text-on-surface font-medium">Rajesh Kumar</div>
+<div class="text-xs text-on-surface-variant font-mono-label">ID: USR-8821</div>
+</div>
+</div>
+</td>
+<td class="p-3 text-on-surface-variant">Maharashtra</td>
+<td class="p-3">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-label-sm bg-secondary-container text-on-secondary-container">
+                                            Active
+                                        </span>
+</td>
+<td class="p-3 text-on-surface-variant text-sm">2 mins ago</td>
+<td class="p-3 text-right">
+<button class="text-outline hover:text-primary transition-colors opacity-0 group-hover:opacity-100"><span class="material-symbols-outlined text-[20px]">more_vert</span></button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-highest/50 transition-colors group">
+<td class="p-3 py-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center font-bold text-sm">SP</div>
+<div>
+<div class="text-on-surface font-medium">Sunita Patel</div>
+<div class="text-xs text-on-surface-variant font-mono-label">ID: USR-7452</div>
+</div>
+</div>
+</td>
+<td class="p-3 text-on-surface-variant">Gujarat</td>
+<td class="p-3">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-label-sm bg-secondary-container text-on-secondary-container">
+                                            Active
+                                        </span>
+</td>
+<td class="p-3 text-on-surface-variant text-sm">1 hr ago</td>
+<td class="p-3 text-right">
+<button class="text-outline hover:text-primary transition-colors opacity-0 group-hover:opacity-100"><span class="material-symbols-outlined text-[20px]">more_vert</span></button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-highest/50 transition-colors group">
+<td class="p-3 py-4">
+<div class="flex items-center gap-3">
+<img class="w-8 h-8 rounded-full object-cover" data-alt="Small headshot of an Indian man in business casual attire, smiling slightly, well-lit studio background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaSOeXGzKKVljj9vw9oem7iry_mM1z1rjS58H2QmC89s-JyyCWjHav9uUveuTRZdn6oRhydZ_GbuC3jxuYLN9zq4WkyvpR0C8VIn7LsdAe_WW_kK9Y2_rizO6S7l5fVFyd52O4406BT7DzXXkFgG0jW3FmwrWO5kjZgmNjYDK0uOXc8NR8rMeNTBvaBMmvDi8NySJDFxT10zkz-P8ab4qpCVaAkLbJkEkkQNobbWVFJDYxlU40H_V8"/>
+<div>
+<div class="text-on-surface font-medium">Amit Singh</div>
+<div class="text-xs text-on-surface-variant font-mono-label">ID: USR-9104</div>
+</div>
+</div>
+</td>
+<td class="p-3 text-on-surface-variant">Uttar Pradesh</td>
+<td class="p-3">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-label-sm bg-error-container text-on-error-container">
+                                            Suspended
+                                        </span>
+</td>
+<td class="p-3 text-on-surface-variant text-sm">3 days ago</td>
+<td class="p-3 text-right">
+<button class="text-outline hover:text-primary transition-colors opacity-0 group-hover:opacity-100"><span class="material-symbols-outlined text-[20px]">more_vert</span></button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Right Column: AI Logs & Schemes (Spans 1) -->
+<div class="space-y-lg flex flex-col">
+<!-- Real-time AI Logs -->
+<div class="bg-surface-container rounded-xl shadow-sm flex-1 flex flex-col overflow-hidden">
+<div class="p-md bg-inverse-surface text-inverse-on-surface flex justify-between items-center relative overflow-hidden">
+<!-- Decorative tech pattern -->
+<div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 16px 16px;"></div>
+<h3 class="font-title-md text-title-md relative z-10 flex items-center">
+<span class="material-symbols-outlined mr-sm text-[20px]">terminal</span>
+                            Neural Logs
+                        </h3>
+<span class="relative flex h-2 w-2 z-10">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-fixed opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-secondary-fixed"></span>
+</span>
+</div>
+<div class="p-md flex-1 bg-surface font-mono-label text-[11px] leading-tight text-on-surface-variant space-y-3 overflow-y-auto max-h-[300px] xl:max-h-none" id="log-container">
+<div class="flex gap-2 animate-fade-in-up">
+<span class="text-primary opacity-70">10:42:01</span>
+<span class="text-secondary">[INFO]</span>
+<span class="truncate">Model req: 'agri_yield_pred' via Node 44</span>
+</div>
+<div class="flex gap-2 animate-fade-in-up" style="animation-delay: 0.1s">
+<span class="text-primary opacity-70">10:42:05</span>
+<span class="text-secondary">[INFO]</span>
+<span class="truncate">NLP parse: Scheme query 'PMFME eligibility'</span>
+</div>
+<div class="flex gap-2 animate-fade-in-up" style="animation-delay: 0.2s">
+<span class="text-primary opacity-70">10:42:12</span>
+<span class="text-error">[WARN]</span>
+<span class="truncate">High latency detected in Gov API sync (1200ms)</span>
+</div>
+<div class="flex gap-2 animate-fade-in-up" style="animation-delay: 0.3s">
+<span class="text-primary opacity-70">10:42:18</span>
+<span class="text-secondary">[INFO]</span>
+<span class="truncate">Inference complete. Confidence: 0.94</span>
+</div>
+<div class="flex gap-2 opacity-50">
+<span class="text-primary opacity-70">10:41:55</span>
+<span class="text-secondary">[INFO]</span>
+<span class="truncate">Session init: USR-8821</span>
+</div>
+</div>
+</div>
+<!-- Scheme Update Management -->
+<div class="bg-surface-container rounded-xl p-md shadow-sm">
+<div class="flex justify-between items-center mb-md">
+<h3 class="font-title-md text-title-md text-on-surface">Scheme Sync</h3>
+<button class="text-primary hover:bg-primary-container p-1 rounded transition-colors">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+<div class="space-y-3">
+<div class="p-3 bg-surface rounded-lg border-l-4 border-primary flex justify-between items-center shadow-sm">
+<div>
+<h4 class="font-label-sm text-label-sm text-on-surface font-semibold">PM-Kisan v2.1</h4>
+<p class="font-mono-label text-[10px] text-on-surface-variant mt-0.5">Last synced: 2 hrs ago</p>
+</div>
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+</div>
+<div class="p-3 bg-surface rounded-lg border-l-4 border-tertiary flex justify-between items-center shadow-sm">
+<div>
+<h4 class="font-label-sm text-label-sm text-on-surface font-semibold">Mudra Yojana Update</h4>
+<p class="font-mono-label text-[10px] text-on-surface-variant mt-0.5">Pending review</p>
+</div>
+<button class="bg-tertiary-container text-on-tertiary-container text-[10px] px-2 py-1 rounded font-bold uppercase tracking-wide">Review</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<style>
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .animate-fade-in-up {
+        animation: fadeInUp 0.4s ease-out forwards;
+        opacity: 0;
+    }
+</style>
+<script>
+    // Simulate incoming logs
+    const logContainer = document.getElementById('log-container');
+    const logMessages = [
+        "Vector DB updated: +42 embeddings",
+        "Model req: 'retail_risk_score' via Node 12",
+        "Cache hit for region 'MH-West'",
+        "NLP parse: 'loan rate comparison'",
+        "Inference complete. Confidence: 0.88"
+    ];
+
+    setInterval(() => {
+        if(!logContainer) return;
+        const msg = logMessages[Math.floor(Math.random() * logMessages.length)];
+        const time = new Date().toLocaleTimeString('en-US', { hour12: false, hour: "numeric", minute: "numeric", second: "numeric" });
+        
+        const newLog = document.createElement('div');
+        newLog.className = 'flex gap-2 animate-fade-in-up';
+        newLog.innerHTML = `
+            <span class="text-primary opacity-70">${time}</span>
+            <span class="text-secondary">[INFO]</span>
+            <span class="truncate">${msg}</span>
+        `;
+        
+        logContainer.insertBefore(newLog, logContainer.firstChild);
+        
+        if(logContainer.children.length > 10) {
+            logContainer.removeChild(logContainer.lastChild);
+        }
+    }, 4500);
+</script></main></div><div class="fixed bottom-8 right-8 z-50"><button class="w-14 h-14 rounded-full bg-primary text-on-primary shadow-xl flex items-center justify-center hover:scale-110 transition-transform active:scale-95"><span class="material-symbols-outlined text-3xl">smart_toy</span></button></div></body></html>

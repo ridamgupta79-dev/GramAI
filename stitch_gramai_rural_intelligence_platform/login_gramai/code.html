@@ -1,0 +1,141 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-background":"#141b2b","on-secondary-container":"#007432","surface-container-low":"#f1f3ff","surface-container":"#e9edff","on-secondary-fixed":"#002109","on-primary":"#ffffff","on-tertiary-fixed":"#2a1700","tertiary-fixed-dim":"#ffb95f","on-surface":"#141b2b","on-error":"#ffffff","on-primary-container":"#eeefff","inverse-primary":"#b4c5ff","error-container":"#ffdad6","secondary-fixed":"#6bff8f","surface-container-highest":"#dce2f7","on-secondary-fixed-variant":"#005321","on-tertiary":"#ffffff","surface-tint":"#0053db","primary":"#004ac6","surface-bright":"#f9f9ff","on-surface-variant":"#434655","on-primary-fixed":"#00174b","inverse-surface":"#293040","secondary":"#006e2f","on-tertiary-container":"#ffeedd","surface":"#f9f9ff","on-error-container":"#93000a","secondary-container":"#6bff8f","surface-container-high":"#e1e8fd","surface-container-lowest":"#ffffff","on-primary-fixed-variant":"#003ea8","inverse-on-surface":"#edf0ff","error":"#ba1a1a","tertiary":"#784b00","primary-container":"#2563eb","outline":"#737686","outline-variant":"#c3c6d7","secondary-fixed-dim":"#4ae176","on-secondary":"#ffffff","tertiary-fixed":"#ffddb8","primary-fixed":"#dbe1ff","background":"#f9f9ff","surface-dim":"#d3daef","on-tertiary-fixed-variant":"#653e00","tertiary-container":"#996100","primary-fixed-dim":"#b4c5ff","surface-variant":"#dce2f7"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"xs":"4px","sm":"8px","margin":"32px","xl":"32px","unit":"8px","gutter":"24px","lg":"24px","2xl":"48px","md":"16px"},"fontFamily":{"title-md":["Inter"],"label-sm":["Inter"],"headline-lg":["Inter"],"headline-lg-mobile":["Inter"],"body-md":["Inter"],"mono-label":["Inter"],"display-lg":["Inter"]},"fontSize":{"title-md":["20px",{"lineHeight":"28px","fontWeight":"600"}],"label-sm":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","fontWeight":"600"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"mono-label":["12px",{"lineHeight":"16px","letterSpacing":"0.05em","fontWeight":"600"}],"display-lg":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"700"}]}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-background font-body-md text-on-background"><main class="w-full flex items-center justify-center min-h-screen"><div class="flex flex-col w-full h-full justify-center items-center relative overflow-hidden bg-surface-container-low min-h-screen">
+<div class="absolute inset-0 w-full h-full overflow-hidden pointer-events-none">
+<div class="absolute -top-[20%] -left-[10%] w-[50vw] h-[50vw] rounded-full bg-primary/5 blur-[100px]"></div>
+<div class="absolute top-[60%] -right-[10%] w-[40vw] h-[40vw] rounded-full bg-secondary-container/10 blur-[80px]"></div>
+</div>
+<div class="w-full max-w-md mx-auto relative z-10 px-md">
+<div class="bg-surface-container-lowest rounded-2xl shadow-xl overflow-hidden backdrop-blur-xl transition-all duration-300" id="auth-container">
+<div class="p-lg">
+<div class="flex items-center justify-center mb-xl">
+<span class="material-symbols-outlined text-primary text-4xl mr-sm">eco</span>
+<span class="font-display-lg text-display-lg text-on-surface">Gram<span class="text-primary">AI</span></span>
+</div>
+<div class="flex bg-surface-container-low rounded-lg p-1 mb-xl relative">
+<div class="absolute top-1 bottom-1 left-1 w-[calc(50%-4px)] bg-surface-container-lowest rounded-md shadow-sm transition-transform duration-300 ease-out" id="tab-indicator"></div>
+<button class="flex-1 py-sm text-center font-label-sm text-label-sm text-on-surface relative z-10 transition-colors" id="btn-login" onclick="switchTab('login')">Login</button>
+<button class="flex-1 py-sm text-center font-label-sm text-label-sm text-on-surface-variant relative z-10 transition-colors" id="btn-register" onclick="switchTab('register')">Register</button>
+</div>
+<div class="transition-opacity duration-300" id="login-form">
+<div class="space-y-md">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-sm">Email or Phone</label>
+<input class="w-full bg-surface-container px-md py-sm rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/50 transition-shadow" placeholder="e.g. +91 98765 43210" type="text"/>
+</div>
+<div>
+<div class="flex justify-between items-center mb-sm">
+<label class="block font-label-sm text-label-sm text-on-surface-variant">Password</label>
+<a class="font-label-sm text-label-sm text-primary hover:text-primary-fixed-variant transition-colors" href="#">Forgot?</a>
+</div>
+<div class="relative">
+<input class="w-full bg-surface-container px-md py-sm rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/50 transition-shadow" placeholder="••••••••" type="password"/>
+<button class="absolute right-md top-1/2 -translate-y-1/2 text-on-surface-variant hover:text-on-surface">
+<span class="material-symbols-outlined text-[20px]">visibility_off</span>
+</button>
+</div>
+</div>
+<button class="w-full bg-primary text-on-primary font-title-md text-title-md py-sm rounded-lg hover:bg-on-primary-fixed-variant transition-colors mt-lg shadow-md hover:shadow-lg" onclick="showOTP()">Continue</button>
+</div>
+</div>
+<div class="hidden opacity-0 transition-opacity duration-300 absolute top-0 left-0 w-full h-full p-lg pt-[116px]" id="register-form">
+<div class="space-y-md">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-sm">Full Name</label>
+<input class="w-full bg-surface-container px-md py-sm rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/50 transition-shadow" placeholder="Kisan Kumar" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-sm">Mobile Number</label>
+<input class="w-full bg-surface-container px-md py-sm rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/50 transition-shadow" placeholder="+91" type="tel"/>
+</div>
+<button class="w-full bg-primary text-on-primary font-title-md text-title-md py-sm rounded-lg hover:bg-on-primary-fixed-variant transition-colors mt-lg shadow-md hover:shadow-lg" onclick="showOTP()">Send OTP</button>
+</div>
+</div>
+<div class="hidden opacity-0 transition-opacity duration-300 absolute top-0 left-0 w-full h-full bg-surface-container-lowest p-lg z-20 flex flex-col justify-center" id="otp-form">
+<button class="absolute top-md left-md text-on-surface-variant hover:text-on-surface p-sm" onclick="hideOTP()">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<div class="text-center mb-xl mt-lg">
+<div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary-container mb-md">
+<span class="material-symbols-outlined text-on-primary-container text-3xl">dialpad</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-sm">Verification</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Enter the 4-digit code sent to your device.</p>
+</div>
+<div class="flex justify-center gap-sm mb-xl">
+<input class="w-12 h-14 text-center text-title-md font-title-md bg-surface-container rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50" maxlength="1" type="text" value="4"/>
+<input class="w-12 h-14 text-center text-title-md font-title-md bg-surface-container rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50" maxlength="1" type="text" value="9"/>
+<input class="w-12 h-14 text-center text-title-md font-title-md bg-surface-container rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50" maxlength="1" type="text"/>
+<input class="w-12 h-14 text-center text-title-md font-title-md bg-surface-container rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50" maxlength="1" type="text"/>
+</div>
+<button class="w-full bg-secondary text-on-secondary font-title-md text-title-md py-sm rounded-lg hover:bg-on-secondary-fixed-variant transition-colors shadow-md">Verify & Proceed</button>
+<p class="text-center mt-lg font-label-sm text-label-sm text-on-surface-variant">Didn't receive code? <button class="text-primary hover:underline">Resend in 0:45</button></p>
+</div>
+<div class="mt-xl pt-lg relative flex items-center justify-center">
+<div class="absolute inset-0 flex items-center">
+<div class="w-full h-[1px] bg-outline-variant/30"></div>
+</div>
+<div class="relative bg-surface-container-lowest px-md font-mono-label text-mono-label text-on-surface-variant uppercase">Or continue with</div>
+</div>
+<div class="mt-lg space-y-sm">
+<button class="w-full flex items-center justify-center gap-md py-sm rounded-lg bg-surface hover:bg-surface-container transition-colors shadow-sm">
+<img class="w-5 h-5 object-contain rounded-full" data-alt="Google G logo icon, minimalist flat design, colorful" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjimuKyoYYgy43ISRyCiWgQ0F-p71hKUqx87Lfe0aIpcWmi8GhBlZV4AqFiSYYQdpvQsWuGCUkLkTFGPrjFUQAK0h4KNsIkrRCevZCFudE_vmjYFCPC3xRYQJN539a8-7lZ_MkzMnwuM1Evbr2ZHq-OBqx_YKsQEIvJ5FJrweWAWZ9JT-HQ1s3KSsWQQ-mm7lpQUvJK55AxZGnKWWn5zRL9h49-RBWJiFL7OIYCMfZ519raUeWyCrr"/>
+<span class="font-label-sm text-label-sm text-on-surface">Google</span>
+</button>
+<button class="w-full flex items-center justify-center gap-md py-sm rounded-lg bg-surface hover:bg-surface-container transition-colors shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">fingerprint</span>
+<span class="font-label-sm text-label-sm text-on-surface">Rural Digital ID</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="fixed bottom-lg left-0 w-full flex justify-center text-center px-md z-0 pointer-events-none">
+<p class="font-mono-label text-mono-label text-on-surface-variant opacity-60 max-w-sm">Secure access to GramAI intelligence platform. Protected by enterprise-grade encryption.</p>
+</div>
+</div>
+<script>
+  function switchTab(tab) {
+    const indicator = document.getElementById('tab-indicator');
+    const loginBtn = document.getElementById('btn-login');
+    const registerBtn = document.getElementById('btn-register');
+    const loginForm = document.getElementById('login-form');
+    const registerForm = document.getElementById('register-form');
+    
+    if (tab === 'register') {
+      indicator.style.transform = 'translateX(100%)';
+      loginBtn.classList.replace('text-on-surface', 'text-on-surface-variant');
+      registerBtn.classList.replace('text-on-surface-variant', 'text-on-surface');
+      
+      loginForm.style.opacity = '0';
+      setTimeout(() => {
+        loginForm.classList.add('hidden');
+        registerForm.classList.remove('hidden');
+        setTimeout(() => registerForm.style.opacity = '1', 10);
+      }, 300);
+    } else {
+      indicator.style.transform = 'translateX(0)';
+      registerBtn.classList.replace('text-on-surface', 'text-on-surface-variant');
+      loginBtn.classList.replace('text-on-surface-variant', 'text-on-surface');
+      
+      registerForm.style.opacity = '0';
+      setTimeout(() => {
+        registerForm.classList.add('hidden');
+        loginForm.classList.remove('hidden');
+        setTimeout(() => loginForm.style.opacity = '1', 10);
+      }, 300);
+    }
+  }
+
+  function showOTP() {
+      const otpForm = document.getElementById('otp-form');
+      otpForm.classList.remove('hidden');
+      setTimeout(() => otpForm.style.opacity = '1', 10);
+  }
+
+  function hideOTP() {
+      const otpForm = document.getElementById('otp-form');
+      otpForm.style.opacity = '0';
+      setTimeout(() => otpForm.classList.add('hidden'), 300);
+  }
+</script></main></body></html>

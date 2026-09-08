@@ -1,0 +1,28 @@
+{
+  "Maharashtra": {
+    "Pune": {
+      "Haveli": ["Wadki", "Uruli Kanchan", "Kunjirwadi", "Shindewadi"],
+      "Maval": ["Kamshet", "Vadgaon", "Kanhegaon"]
+    },
+    "Nashik": {
+      "Dindori": ["Karanjgaon", "Jopul", "Pimpalgaon Dhum"],
+      "Igatpuri": ["Ghoti", "Pimpalner", "Khambale"]
+    }
+  },
+  "Uttar Pradesh": {
+    "Lucknow": {
+      "Malihabad": ["Garhi Sanjar Khan", "Bahrozpur", "Kasaigaon"],
+      "Bakshi Ka Talab": ["Sikandarpur Kaleri", "Ram Sanehi Ghat"]
+    },
+    "Varanasi": {
+      "Chiraigaon": ["Harahua", "Bharatpur", "Kachhwa"],
+      "Pindra": ["Angadganj", "Bazar Khas"]
+    }
+  },
+  "Bihar": {
+    "Patna": {
+      "Danapur": ["Neura", "Bikram"],
+      "Masaurhi": ["Poisawan", "Sharfuddinpur"]
+    }
+  }
+}
