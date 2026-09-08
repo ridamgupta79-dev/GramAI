@@ -33,9 +33,6 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:5173. API docs at http://localhost:8000/docs.
-
-Or with Docker: `docker compose up --build`
 
 ## Optional LLM
 
