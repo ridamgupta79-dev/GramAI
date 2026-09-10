@@ -1,4 +1,4 @@
-# Rural AI Business Advisory Assistant (SIH 20200)
+# Rural AI Business Advisory Assistant
 
 Hyper-local business feasibility reports + smart scheme calculator for rural
 micro-entrepreneurs availing concessional credit (10% margin / 90% loan).
