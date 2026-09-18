@@ -1,12 +1,15 @@
 # GitHub Linguist configuration for GramAI
 
-# Ignore generated/dependency files from language statistics
+# Exclude Stitch-generated prototype files from language statistics
+stitch_gramai_rural_intelligence_platform/** linguist-generated
+
+# Exclude dependencies and build output
 frontend/node_modules/** linguist-vendored
 frontend/dist/** linguist-generated
 
-# Ignore generated Python cache files
+# Exclude Python cache files
 **/__pycache__/** linguist-generated
 *.pyc linguist-generated
 
-# Ignore screenshots from language statistics
+# Exclude screenshots
 docs/screenshots/** linguist-generated
